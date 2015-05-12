@@ -34,7 +34,9 @@ set(ARGUSTV_SOURCES src/activerecording.cpp
                     src/tools.cpp
                     src/upcomingrecording.cpp
                     src/uri.cpp
-                    src/utils.cpp)
+                    src/utils.cpp
+		    src/DialogDeleteTimer.cpp
+		    src/DialogRecordPref.cpp)
 
 # Header files
 set(ARGUSTV_HEADERS src/activerecording.h
@@ -51,7 +53,9 @@ set(ARGUSTV_HEADERS src/activerecording.h
                     src/tools.h
                     src/upcomingrecording.h
                     src/uri.h
-                    src/utils.h)
+                    src/utils.h
+       		    src/DialogDeleteTimer.h
+		    src/DialogRecordPref.h)
 source_group("Header Files" FILES ${ARGUSTV_HEADERS})
 
 if(WIN32)
@@ -59,7 +63,9 @@ if(WIN32)
 set(RESOURCE_FILES pvr.argustv/addon.xml
                 pvr.argustv/changelog.txt
                 pvr.argustv/resources/settings.xml
-                pvr.argustv/resources/language/English/strings.po)
+                pvr.argustv/resources/language/English/strings.po
+		pvr.argustv/resources/skins/skin.confluence/720p/DeleteTimer.xml
+		pvr.argustv/resources/skins/skin.confluence/720p/RecordPrefs.xml)
 source_group("Resource Files" FILES ${RESOURCE_FILES})
 endif(WIN32)
 
